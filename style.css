@@ -1,63 +1,62 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap'); */
-
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background: #45badd;
-  font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background: -webkit-linear-gradient(top, rgb(69, 186, 221) 0%, rgb(9, 86, 109) 100%);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url('./robot.gif');
-  background-size: contain;
-  background-position: left center;
-  background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('./robot-transparent.gif');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
 }
 
 button {
-  cursor: pointer;
-  outline: none;
-  width: 200px;
-  height: 50px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-  color: white;
-  background: #ff3482;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    background: #ff3482;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  filter: brightness(95%);
+    filter: brightness(95%);
 }
 
 button:active {
-  transform: scale(0.98);
+    transform: scale(0.98);
 }
 
 button:disabled {
-  cursor: default;
-  filter: brightness(30%);
+    cursor: default;
+    filter: brightness(30%);
 }
 
 /* Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px) {
-  .container {
-    background-size: cover;
-    background-position: center center;
-  }
+    .container {
+        background-size: cover;
+        background-position: center center;
+    }
 
-  button {
-    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
-  }
+    button {
+        box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+    }
 }
